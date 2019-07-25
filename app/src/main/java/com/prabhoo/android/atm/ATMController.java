@@ -63,12 +63,13 @@ public class ATMController implements ATMState {
 
     @Override
     public ATMState apply() {
-        log("You have not entered your card yet");
-        currentState = noCard.apply();
 
         if (cashInMachine <= 0) {
             log("We don't have any money");
             currentState = noCash.apply();
+        } else {
+            log("You have not entered your card yet");
+            currentState = noCard.apply();
         }
         return this;
     }
