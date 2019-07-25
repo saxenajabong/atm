@@ -31,7 +31,7 @@ public class HasPin implements ATMState {
     public void requestCash() {
         int cashToWithdraw = getInt(atm.amount.getText().toString());
         if (cashToWithdraw > atm.cashInMachine) {
-            atm.log("You don't have that much cash available");
+            atm.log("we don't have that much cash available");
             atm.log("Your card is ejected");
             atm.currentState = atm.noCard.apply();
         } else {
@@ -40,7 +40,7 @@ public class HasPin implements ATMState {
             atm.log("Your card is ejected");
             atm.currentState = atm.noCard.apply();
             if (atm.cashInMachine <= 0) {
-                atm.log("No cash");
+                atm.log("We don't have any money");
                 atm.currentState = atm.noCash.apply();
             }
         }

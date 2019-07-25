@@ -67,7 +67,7 @@ public class ATMController implements ATMState {
         currentState = noCard.apply();
 
         if (cashInMachine <= 0) {
-            log("No cash");
+            log("We don't have any money");
             currentState = noCash.apply();
         }
         return this;

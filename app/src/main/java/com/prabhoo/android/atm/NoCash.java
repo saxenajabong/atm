@@ -20,8 +20,6 @@ class NoCash implements ATMState {
     @Override
     public void insertCard() {
         atm.log("We don't have any money");
-        atm.log("Your card is ejected");
-
     }
 
     @Override
