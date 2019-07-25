@@ -1,0 +1,5 @@
+atm.imi
+local.properties
+/build
+/.gradle
+/.idea
