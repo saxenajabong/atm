@@ -14,6 +14,8 @@ public class HasPin implements ATMState {
         atm.insertPin.setEnabled(false);
         atm.withdrawMoney.setEnabled(true);
         atm.ejectCard.setEnabled(true);
+        atm.pin.setEnabled(false);
+        atm.amount.setEnabled(true);
         return this;
     }
 

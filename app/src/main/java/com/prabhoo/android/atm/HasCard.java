@@ -16,6 +16,8 @@ class HasCard implements ATMState {
         atm.insertPin.setEnabled(true);
         atm.withdrawMoney.setEnabled(false);
         atm.ejectCard.setEnabled(true);
+        atm.pin.setEnabled(true);
+        atm.amount.setEnabled(false);
         return this;
     }
 

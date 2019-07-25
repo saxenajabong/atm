@@ -14,6 +14,8 @@ class NoCash implements ATMState {
         atm.insertPin.setEnabled(false);
         atm.withdrawMoney.setEnabled(false);
         atm.ejectCard.setEnabled(false);
+        atm.pin.setEnabled(false);
+        atm.amount.setEnabled(false);
         return this;
     }
 
